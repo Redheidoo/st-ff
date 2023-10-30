@@ -1,8 +1,8 @@
 {
   "version": "2.1.0",
   "summary": {
-    "title": "SPRG",
-    "owner": "",
+    "title": "Misusecase Threat Model SPRG",
+    "owner": "ramon.knuesel@stud.hslu.ch",
     "description": "",
     "id": 0
   },
@@ -10,17 +10,785 @@
     "contributors": [],
     "diagrams": [
       {
-        "id": 1,
-        "title": "SPRG misusecases",
+        "id": 0,
+        "title": "New STRIDE diagram",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.1.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": -150.0000000000001,
+              "y": -360.00000000000176
+            },
+            "size": {
+              "width": 1530,
+              "height": 700
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "MC2: Betrug durch falsche QR-Codes "
+              }
+            },
+            "id": "b34a0f6e-adec-4cdc-aeac-f70f5445c8aa",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "MC2: Betrug durch falsche QR-Codes ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": -70,
+              "y": 180
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "2d7d5bca-960d-47a4-a929-32c216eb07be",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Flow",
+              "name": "User",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "gefälschter QR Code erstellt",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "fc67a2f8-fcbe-4ae9-974a-b13a8bbfff77",
+            "source": {
+              "cell": "6ab1a081-5c32-4c53-ba5c-5c5c218e53fb"
+            },
+            "target": {
+              "cell": "d8f74548-19f1-418e-a182-8ad58c68d67c"
+            },
+            "vertices": [
+              {
+                "x": 860,
+                "y": 210
+              }
+            ],
+            "labels": [
+              "gefälschter QR Code erstellt"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "möchte\nZahlung ausführen",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "74c116f2-491a-4038-a485-926f525c74da",
+            "source": {
+              "cell": "2d7d5bca-960d-47a4-a929-32c216eb07be"
+            },
+            "target": {
+              "cell": "2ebfb4dd-f3c4-4101-8839-95cfc5b2a1e6"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 210
+              }
+            ],
+            "labels": [
+              "möchte\nZahlung ausführen"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "QR Code Scannen",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "9acdc2f1-5f7a-4d4d-b95f-825c3a19f1f3",
+            "source": {
+              "cell": "2ebfb4dd-f3c4-4101-8839-95cfc5b2a1e6"
+            },
+            "target": {
+              "cell": "d8f74548-19f1-418e-a182-8ad58c68d67c"
+            },
+            "vertices": [
+              {
+                "x": 580,
+                "y": 310
+              }
+            ],
+            "labels": [
+              "QR Code Scannen"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Bestätigung von QR Code\n(sieht normal aus für Kunden)",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "739cec16-248f-40f9-ba54-61c7f7b6f160",
+            "source": {
+              "cell": "d8f74548-19f1-418e-a182-8ad58c68d67c"
+            },
+            "target": {
+              "cell": "2ebfb4dd-f3c4-4101-8839-95cfc5b2a1e6"
+            },
+            "vertices": [
+              {
+                "x": 570,
+                "y": 150
+              }
+            ],
+            "labels": [
+              "Bestätigung von QR Code\n(sieht normal aus für Kunden)"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Kunde bestätigt\nZahlung",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "5d6329a2-a7d8-426b-b532-93ae02d79866",
+            "source": {
+              "cell": "2ebfb4dd-f3c4-4101-8839-95cfc5b2a1e6"
+            },
+            "target": {
+              "cell": "0e8de6f0-dac3-48d1-b14f-4d92dc502328"
+            },
+            "vertices": [
+              {
+                "x": 407,
+                "y": 50
+              }
+            ],
+            "labels": [
+              "Kunde bestätigt\nZahlung"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Zahlungsbestätigung",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "1eb77921-1d68-4cd2-8727-8cb7d37d0ec6",
+            "source": {
+              "cell": "0e8de6f0-dac3-48d1-b14f-4d92dc502328"
+            },
+            "target": {
+              "cell": "2ebfb4dd-f3c4-4101-8839-95cfc5b2a1e6"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 100
+              }
+            ],
+            "labels": [
+              "Zahlungsbestä"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transaktions\nAusführung",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3e455bba-3df6-458c-82af-0558ffd5a747",
+            "source": {
+              "cell": "0e8de6f0-dac3-48d1-b14f-4d92dc502328"
+            },
+            "target": {
+              "cell": "f471d311-e0ed-4170-9ede-11e788a7a447"
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": -160
+              }
+            ],
+            "labels": [
+              "Transaktions\nAusführung"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transaktionsbestätigung",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d9d61646-a9fd-4e6e-a8a6-3ad97c5c3682",
+            "source": {
+              "cell": "f471d311-e0ed-4170-9ede-11e788a7a447"
+            },
+            "target": {
+              "cell": "0e8de6f0-dac3-48d1-b14f-4d92dc502328"
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": -140
+              }
+            ],
+            "labels": [
+              "Transaktionsbestätigung"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Geld an Bank des Attackers\ngesendet",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "da2c211c-9410-4b57-8a96-d8e5e99b1625",
+            "source": {
+              "cell": "f471d311-e0ed-4170-9ede-11e788a7a447"
+            },
+            "target": {
+              "x": 810,
+              "y": -270
+            },
+            "labels": [
+              "Geld an Bank des Attackers\ngesendet"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Attacker erhält das Gled",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "612696e2-a874-4c45-aad8-557816ceadbc",
+            "source": {
+              "cell": "060a3e37-4a19-4504-90c9-8eb38eebcaf3"
+            },
+            "target": {
+              "x": 1180,
+              "y": 180
+            },
+            "vertices": [
+              {
+                "x": 1070,
+                "y": -100
+              }
+            ],
+            "labels": [
+              "Attacker erhält das Gled"
+            ]
+          },
+          {
+            "position": {
+              "x": 1150,
+              "y": 180
+            },
+            "size": {
+              "width": 110,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Attacker"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "6ab1a081-5c32-4c53-ba5c-5c5c218e53fb",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Attacker",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 659,
+              "y": 165
+            },
+            "size": {
+              "width": 160,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "gefälschter \nQR Code"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "d8f74548-19f1-418e-a182-8ad58c68d67c",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Flow",
+              "name": "gefälschter \nQR Code",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 363,
+              "y": 170
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Mobile AP"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "2ebfb4dd-f3c4-4101-8839-95cfc5b2a1e6",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 520,
+              "y": -60
+            },
+            "size": {
+              "width": 100,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Payment API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "0e8de6f0-dac3-48d1-b14f-4d92dc502328",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 535,
+              "y": -310
+            },
+            "size": {
+              "width": 70,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Bank des\nKunden"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 15,
+            "id": "f471d311-e0ed-4170-9ede-11e788a7a447",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 800,
+              "y": -310
+            },
+            "size": {
+              "width": 90,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Bank des\nAttackers"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "060a3e37-4a19-4504-90c9-8eb38eebcaf3",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          }
+        ]
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
